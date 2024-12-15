@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна робота №5</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Лабораторна робота №5</h1>
+
+    <!-- Форма для введення даних -->
+    <h2>Введіть свої дані</h2>
+    <div class="form-container">
+      <form id="dataForm" action="#" method="post">
+        <label
+          >ПІБ:<br />
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="ТТТТТТ Т.Т."
+          /> </label
+        ><br />
+
+        <label
+          >Варіант:<br />
+          <input
+            type="text"
+            id="variant"
+            name="variant"
+            placeholder="ЧЧ"
+          /> </label
+        ><br />
+
+        <label
+          >Телефон:<br />
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="(ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ"
+          /> </label
+        ><br />
+
+        <label
+          >Факультет<br />
+          <input
+            type="text"
+            id="faculty"
+            name="faculty"
+            placeholder="ТТТТ"
+          /> </label
+        ><br />
+
+        <label
+          >Адреса:<br />
+          <input
+            type="text"
+            id="adress"
+            name="adress"
+            placeholder="м. ЧЧЧЧЧЧ"
+          /> </label
+        ><br />
+
+        <button type="button" onclick="validateForm()">Надіслати</button>
+      </form>
+
+      <!-- Повідомлення про введені дані -->
+      <div id="resultMessage" class="result-message"></div>
+    </div>
+
+    <!-- Таблиця 6x6 -->
+    <h2>Таблиця 6x6</h2>
+    <div id="colorPickerContainer">
+      <label
+        >Виберіть колір для клітинки: <input type="color" id="colorPicker"
+      /></label>
+    </div>
+    <table id="colorTable"></table>
+  </body>
+</html>
